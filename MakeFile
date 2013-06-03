@@ -1,0 +1,2 @@
+all:
+  $(MAKE) -C $(CROSS_COMPILE)$(KDIR) SUBDIRS=$(PWD) modules
