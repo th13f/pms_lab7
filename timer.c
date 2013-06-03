@@ -98,14 +98,14 @@ static void __exit timer_exit(void)
 	atomic_set(&tact, -1);
 	ret = del_timer(&sos_timer);
 	if (ret) {
-		printk(KERN_ERR "Failed to turn off timer.\n");
+		printk(KERN_ERR "Turn off timer failed!\n");
 	}
 	kobject_put(kobj);
-	printk(KERN_INFO "Timer module uninstalled.\n");
+	printk(KERN_INFO "Timer module uninstalled success!\n");
 }
 
 MODULE_LICENSE("GPL");
-MODULE_AUTHOR("Blue Carpet");
+MODULE_AUTHOR("Roman, Maxim, Denis, Jenya, Vanya");
 
 module_init(timer_init); /* Register module entry point */
 module_exit(timer_exit); /* Register module cleaning up */
