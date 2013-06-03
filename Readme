@@ -1,0 +1,9 @@
+make
+
+sudo insmod <module name>.ko
+
+dmesg
+
+sudo rmmod <module name>
+
+dmesg
